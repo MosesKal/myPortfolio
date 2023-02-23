@@ -242,7 +242,6 @@ section {
   height: 2px;
   background-color: var(--color-grey-5);
 }
-
 .btn-con {
   display: flex;
   align-self: flex-start;

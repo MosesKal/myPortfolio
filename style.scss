@@ -53,8 +53,12 @@ a{
 
 header{
     height: 100vh;
+    font-family: 'Poppins', sans-serif;
     color: var(--color-white);
     overflow: hidden;
+    @media screen and (max-width:610px) {
+        min-height: 105vh;
+    }
 }
 
 section{
@@ -727,4 +731,4 @@ section{
     }
 }
 /*-----------------------------------*/
-@import './media';
+@import './_media';

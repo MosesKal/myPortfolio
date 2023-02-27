@@ -2,6 +2,8 @@ const sections = document.querySelectorAll('.section');
 const sectBtns = document.querySelectorAll('.controlls');
 const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-content');
+//const bouttonSend = document.getElementById('send');
+
 
 
 function PageTransitions(){
@@ -40,4 +42,23 @@ function PageTransitions(){
         element.classList.toggle('light-mode');
     });
 }
+
+function sendMail(){
+    const parameters = {
+        name : document.querySelector("#name").value,
+        email : document.querySelector("#email").value,
+        message : document.querySelector("#message").value
+    };
+
+    const serviceID = "service_x8hhaih";
+    const templateID = "template_7lmn8yo";
+
+    emailjs.send(serviceID, templateID, parameters)
+    .then(function(response){
+        console.log('SUCCESS!', response.status, response.text);
+    },function(error){
+        console.log('FAILED...', error);
+    });
+}
+
 PageTransitions();

@@ -21,6 +21,8 @@
     --color-grey-6: #12181b;
     --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+    --color-form:#2a2e35;
+    --color-form-text: #2a2e35;
 }
 .light-mode {
     --color-primary: #f7fafb;
@@ -34,6 +36,8 @@
     --color-grey-4: #454e56;
     --color-grey-5: #f8f8f8;
     --color-grey-6: #12181b;
+    --color-form:#6c7983;
+    --color-form-text: #f7fafb;
 }
 
 body{
@@ -56,8 +60,8 @@ header{
     font-family: 'Poppins', sans-serif;
     color: var(--color-white);
     overflow: hidden;
-    @media screen and (max-width:610px) {
-        min-height: 105vh;
+    @media screen and (max-width:600px) {
+        // min-height: 100vh;
     }
 }
 
@@ -636,7 +640,7 @@ section{
                 padding: .8rem 1.1rem;
                 outline: none;
                 border: none;
-                background-color: var(--color-grey-5);
+                background-color: var(--color-form);
                 width: 100%;
                 color: var(--color-white);
                 resize: none;
@@ -651,6 +655,19 @@ section{
         .submit-btn {
             display: flex;
             justify-content: flex-start;
+
+            .btn{
+                width: 30%;
+                height: 50px;
+                font-family: 'Poppins';
+                font-size: 1rem;
+                cursor: pointer;
+                border-radius: 5px;
+                background-color: var(--color-secondary);
+                color: var(--color-grey0);
+
+            }
+            
         }
     }
 }

@@ -769,8 +769,7 @@ section {
     font-size: 2.5rem;
   }
   .header-content .left-header .image {
-    padding-top: 0;
-    width: 90%;
+    display: none;
   }
   .about-container {
     grid-template-columns: 1fr;
